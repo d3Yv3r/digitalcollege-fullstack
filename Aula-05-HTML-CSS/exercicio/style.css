@@ -1,0 +1,57 @@
+/* Atributo de aplicação de estilo global */
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #C81C6F;
+}
+
+body div:first-of-type {
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 8px;
+  width: 600px;
+}
+
+form {
+  padding: 20px;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+label {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  margin: 20px 0 5px 0px;
+}
+
+label:first-child {
+  margin-top: 0;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+input:last-child {
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+  border: none;
+} 
+select {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px;
+}

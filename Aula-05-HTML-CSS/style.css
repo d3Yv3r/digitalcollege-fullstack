@@ -1,0 +1,114 @@
+* {
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f2f5;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  max-width: 1440px;
+  margin-top: 80px;
+  padding-bottom: 112px;
+  padding-top: 72px;
+}
+
+img {
+  max-width: 250px;
+}
+
+main div:first-child  {
+  max-width: 502px;
+}
+
+main div:last-child {
+  text-align: center;
+  max-width: 396px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.formDiv {
+  background-color: #ffff;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  text-align: center;
+  width: 396px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input {
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  padding: 14px;
+  border-radius: 6px;
+}
+
+.signIn {
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  background-color: #1877f2;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #1877f2;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: #dddfe2;
+  border-bottom-width: 100%;
+}
+
+hr {
+  align-items: center;
+  border-bottom: 1px solid #dadde1;
+  margin: 8px 0 8px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.signUp {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  padding: 16px;
+  background-color: #42b72a;
+  color: white;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  font-weight: normal;
+}
+.creatPJAccount {
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+}
