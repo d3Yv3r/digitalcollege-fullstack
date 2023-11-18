@@ -1,0 +1,54 @@
+<html lang="pt-br">
+  <head>
+    <title>Vagas Digital College</title>
+    <link rel="stylesheet" href="vagas.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1>Vagas Digital College</h1>
+      <form>
+        <label>Nome completo</label>
+        <input type="text" required />
+
+        <label>E-mail</label>
+        <input type="email" required />
+
+        <label>Telefone</label>
+        <input type="tel" pattern="\(\d{2}\) \d{4,5}-\d{4}" required />
+
+        <label>Tenho conhecimento em</label>
+        <select multiple size="12" required>
+          <optgroup label="Front End">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+          </optgroup>
+          <optgroup label="Frameworks">
+            <option>Boostrap</option>
+            <option>Materialize UI</option>
+            <option>Tailwindcss</option>
+          </optgroup>
+          <optgroup label="Back End">
+            <option>NodeJS</option>
+            <option>PHP</option>
+            <option>Java</option>
+          </optgroup>
+        </select>
+
+        <label>Vaga</label>
+        <select required>
+          <option value=""></option>
+          <option>Full Stack Júnior</option>
+          <option>Full Stack Pleno</option>
+          <option>Full Stack Sênior</option>
+        </select>
+
+        <label>CV arquivo</label>
+        <input type="file" required />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+  </body>
+</html>
