@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício Aula 4</title>
+  </head>
+  <body>
+    <div>
+      <table border="1" width="100%">
+        <thead>
+          <tr>
+            <td colspan="4" align="center">TABELA FIPE</td>
+          </tr>
+          <tr>
+            <td align="center">FOTO</td>
+            <td align="center">MARCA</td>
+            <td align="center">PLACA</td>
+            <td align="center">PREÇO</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td align="center">
+              <img
+                src="image/carro1.jpg"
+                alt="Fiat Marea"
+                width="80px"
+                height="80px"
+              />
+            </td>
+            <td align="center">Fiat</td>
+            <td align="center">AAA-0000</td>
+            <td align="center">R$ <span id="v1">13.673,00</span></td>
+          </tr>
+          <tr>
+            <td align="center">
+              <img
+                src="image/carro2.jpg"
+                alt="Effa M100"
+                width="80px"
+                height="80px"
+              />
+            </td>
+            <td align="center">Effa Motors</td>
+            <td align="center">AAA-0000</td>
+            <td align="center">R$ <span id="v2">21.700,00</span></td>
+          </tr>
+          <tr>
+            <td align="center">
+              <img
+                src="image/carro3.jpg"
+                alt="Ford EcoSport"
+                width="80px"
+                height="80px"
+              />
+            </td>
+            <td align="center">Ford</td>
+            <td align="center">AAA-0000</td>
+            <td align="center">R$ <span id="v3">32.520,00</span></td>
+          </tr>
+          <tr>
+            <td align="center">
+              <img
+                src="image/carro4.jpg"
+                alt="Chevrolet Agile"
+                width="80px"
+                height="80px"
+              />
+            </td>
+            <td align="center">General Motors</td>
+            <td align="center">AAA-0000</td>
+            <td align="center">R$ <span id="v4">31.258,00</span></td>
+          </tr>
+          <tr>
+            <td align="center">
+              <img
+                src="image/carro5.jpg"
+                alt="Lifan 530"
+                width="80px"
+                height="80px"
+              />
+            </td>
+            <td align="center">Lifan</td>
+            <td align="center">AAA-0000</td>
+            <td align="center">R$ <span id="v5">29.200,00</span></td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">PREÇO MÉDIO</td>
+            <td colspan="1" align="center">R$ <span id="v6"></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h3>Lista Ordenada por Preço</h3>
+      <ol>
+        <li>Fiat Marea (R$ 13.673,00)</li>
+        <li>Effa Motors (R$ 21.700,00)</li>
+        <li>Lifan 530 (R$ 29.200,00)</li>
+        <li>Chevrolet Agile (R$ 31.258,00)</li>
+        <li>Ford EcoSport (R$ 32.520,00)</li>
+      </ol>
+    </div>
+  </body>
+  <script>
+    function calcular() {
+      let n1 = Number(
+        document
+          .getElementById("v1")
+          .innerText.replace("R$ ", "")
+          .replace(".", "")
+          .replace(",", ".")
+      );
+      let n2 = Number(
+        document
+          .getElementById("v2")
+          .innerText.replace("R$ ", "")
+          .replace(".", "")
+          .replace(",", ".")
+      );
+      let n3 = Number(
+        document
+          .getElementById("v3")
+          .innerText.replace("R$ ", "")
+          .replace(".", "")
+          .replace(",", ".")
+      );
+      let n4 = Number(
+        document
+          .getElementById("v4")
+          .innerText.replace("R$ ", "")
+          .replace(".", "")
+          .replace(",", ".")
+      );
+      let n5 = Number(
+        document
+          .getElementById("v5")
+          .innerText.replace("R$ ", "")
+          .replace(".", "")
+          .replace(",", ".")
+      );
+
+      let media = (n1 + n2 + n3 + n4 + n5) / 5;
+
+      document.getElementById("v6").innerText = media.toFixed(2);
+    }
+
+    calcular();
+  </script>
+</html>
