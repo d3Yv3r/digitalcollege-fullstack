@@ -1,0 +1,20 @@
+.header-wrap {
+    padding: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+
+.nav-menu .menu-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-menu .menu-link {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    color: var(--menu-link-color)
+}
