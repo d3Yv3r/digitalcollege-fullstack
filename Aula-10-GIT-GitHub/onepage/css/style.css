@@ -12,6 +12,6 @@ html {
 :root {
     --menu-link-color: #000;
     --black-rgb: 0,0,0;
-    --black: #000;
+    --black: rgb(0,0,0);
     --white: #fff;
 }
