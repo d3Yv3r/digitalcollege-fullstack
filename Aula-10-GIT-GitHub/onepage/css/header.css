@@ -1,10 +1,10 @@
 .header-wrap {
     padding: 5px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0 rgba(var(--black-rgb), 0.2);
     text-align: center;
     position: fixed;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .nav-menu .menu-item {
