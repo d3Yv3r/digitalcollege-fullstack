@@ -10,8 +10,5 @@ html {
 }
 
 :root {
-    --menu-link-color: #000;
-    --black-rgb: 0,0,0;
-    --black: rgb(0,0,0);
-    --white: #fff;
+    --link-color: #000;
 }
