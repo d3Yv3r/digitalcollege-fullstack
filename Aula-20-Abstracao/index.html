@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="checkout">
+      <div class="card">
+        <div class="content">
+          <div class="front">
+            <span class="nome" id="card-nome"></span>
+            <span class="numero" id="card-numero"></span>
+            <span class="validade" id="card-validade"></span>
+          </div>
+          <div class="back">
+            <span class="cvv" id="card-cvv">XXX</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <form action="" id="form-checkout">
+          <!-- Inputs Cartão -->
+          <label for="">Nome no cartão</label>
+          <input type="text" id="nome" />
+          <label for="">Número do cartão</label>
+          <input type="text" id="numero" />
+          <label for="">Data de validade</label>
+          <input type="text" id="validade" />
+          <label for="">CVV</label>
+          <input type="text" id="cvv" />
+
+          <br />
+          <br />
+
+          <!-- Inputs Endereço -->
+          <h3>Endereço de Entrega</h3>
+          <label for="">CEP</label>
+          <input type="text" id="input-cep" />
+          <label for="">Rua</label>
+          <input type="text" id="input-rua" />
+          <label for="">Complemento</label>
+          <input type="text" id="input-complemento" />
+          <label for="">Bairro</label>
+          <input type="text" id="input-bairro" />
+          <label for="">Estado</label>
+          <!-- <input type="text" id="input-estado" /> -->
+          <select id="select-estado"></select>
+          <label for="">Cidade</label>
+          <!-- <input type="text" id="input-cidade" /> -->
+          <select id="select-cidade"></select>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="cep.js"></script>
+  </body>
+</html>
